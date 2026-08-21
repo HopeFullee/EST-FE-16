@@ -29,9 +29,10 @@
           <img
             src="https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             style="width: 600px"
+            alt="범쌤의 오프라인 강의실에서 HTML 수업을 진행중인 학생들"
           />
           <figcaption>
-            강사의 설명을 들으며 최첨단 컴퓨터로 HTML을 공부하는 수강생들
+            2026년도 8월 18일에 시작한 범쌤의 오프라인 수업 교실 모습
           </figcaption>
         </figure>
       </section>
@@ -74,11 +75,17 @@
       <section id="registration">
         <h2>수강 신청</h2>
 
-        <form action="#" method="post" autocomplete="on">
+        <form
+          class="flex-col"
+          action="#"
+          method="post"
+          autocomplete="on"
+          style="gap: 20px"
+        >
           <fieldset>
             <legend>신청자 정보</legend>
 
-            <ul>
+            <ul class="flex-col">
               <li>
                 <label for="user-name">이름 (필수)</label>
                 <input
@@ -96,8 +103,12 @@
                   id="user-email"
                   autocomplete="email"
                   placeholder="이메일을 입력해주세요."
+                  aria-describedby="email-description"
                   required
                 />
+                <p id="email-description">
+                  수강 안내를 받을 이메일 주소를 입력해 주세요.
+                </p>
               </li>
               <li>
                 <label for="user-tel">휴대전화 번호</label>
@@ -110,20 +121,136 @@
             </ul>
           </fieldset>
 
-          <button type="submit">수강 신청</button>
+          <fieldset>
+            <legend>학습 경험</legend>
+
+            <p>HTML을 공부한 경험이 있나요?</p>
+
+            <ul class="flex-col" style="margin-top: 12px">
+              <li>
+                <input
+                  id="ex-beginner"
+                  type="radio"
+                  name="experience-html"
+                  value="beginner"
+                  required
+                /><label for="ex-beginner">처음 배웁니다</label>
+              </li>
+              <li>
+                <input
+                  id="ex-novice"
+                  type="radio"
+                  name="experience-html"
+                  value="novice"
+                  required
+                /><label for="ex-novice">조금 배웠습니다</label>
+              </li>
+              <li>
+                <input
+                  id="ex-veteran"
+                  type="radio"
+                  name="experience-html"
+                  value="veteran"
+                  required
+                /><label for="ex-veteran">프로젝트 경험이 있습니다</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>관심 학습 주제 선택</legend>
+
+            <ul class="flex-col">
+              <li>
+                <label for="interest-html">HTML</label
+                ><input
+                  id="interest-html"
+                  type="checkbox"
+                  name="interest-category"
+                  value="HTML"
+                />
+              </li>
+              <li>
+                <label for="interest-a11y">웹 접근성</label
+                ><input
+                  id="interest-a11y"
+                  type="checkbox"
+                  name="interest-category"
+                  value="a11y"
+                />
+              </li>
+              <li>
+                <label for="interest-form">입력 양식</label
+                ><input
+                  id="interest-form"
+                  type="checkbox"
+                  name="interest-category"
+                  value="form"
+                />
+              </li>
+            </ul>
+          </fieldset>
+
+          <ul class="flex-col" style="gap: 20px">
+            <li class="flex-col">
+              <label for="contact-message">강사에게 남길 말</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                aria-describedby="message-description"
+              ></textarea>
+              <p id="message-description">
+                "수업에서 궁금한 내용이 있다면 작성해 주세요."
+              </p>
+            </li>
+            <li class="mx-auto">
+              <label for="TOS-checkbox">개인정보 동의 및 버튼</label>
+              <input
+                id="TOS-checkbox"
+                type="checkbox"
+                name="TOS"
+                value="accept"
+                required
+              />
+            </li>
+            <li class="mx-auto">
+              <button type="submit">수강 신청</button>
+            </li>
+          </ul>
         </form>
+      </section>
+
+      <section>
+        <h2>오프라인 교육장 위치</h2>
+
+        <iframe
+          title="오프라인 교육장 위치를 안내하는 구글 지도입니다"
+          src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357cb5d5d5be5cd5%3A0x4c31317213be1bee!2z64Ko7JaR7KO87Iuc7LKtIOygnDHssq3sgqw!5e0!3m2!1sko!2skr!4v1787304620695!5m2!1sko!2skr"
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+
+        <address>
+          <ul class="flex-col" style="margin-top: 12px">
+            <li><strong>주식회사 심선법 프론트엔드 스쿨</strong></li>
+            <li>주소: 경기도 남양주시 경춘로 1037</li>
+            <li><a href="tel:+8210-9999-9999">연락처: 010-9999-9999</a></li>
+            <li>
+              <a href="mailto:beomschool@example.com"
+                >이메일: beomschool@contact.com</a
+              >
+            </li>
+          </ul>
+        </address>
       </section>
     </main>
 
     <footer>
-      <address>
-        <ul>
-          <li><strong>주식회사 심선법 프론트엔드 스쿨</strong></li>
-          <li>주소: 남양주 어딘가</li>
-          <li>연락처: 010-9999-9999</li>
-          <li>이메일: beomschool@contact.com</li>
-        </ul>
-      </address>
+      <small>"Copyright 2026 범쌤 온라인 클래스"</small>
     </footer>
   </body>
 </html>

@@ -49,6 +49,11 @@ p {
   margin: 0;
 }
 
+button {
+  max-width: fit-content;
+  padding: 8px 20px;
+}
+
 .skip-link {
   position: absolute;
   left: 0;
@@ -72,6 +77,13 @@ p {
   font-size: 20px;
 }
 
+figcaption {
+  max-width: 600px;
+  background-color: #d1d1d1;
+  text-align: center;
+  padding: 4px;
+}
+
 .flex-row {
   display: flex;
   align-items: center;
@@ -81,4 +93,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
