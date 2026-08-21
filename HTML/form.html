@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM PRACTICE</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        color: #222222;
+        padding-bottom: 100px;
+      }
+
+      main {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      input {
+        height: 26px;
+        padding: 4px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        cursor: pointer;
+      }
+
+      button {
+        padding: 8px 12px;
+        background-color: skyblue;
+        cursor: pointer;
+      }
+
+      .hero-banner {
+        height: 600px;
+        padding: 30px;
+        background-image: url("https://i.namu.wiki/i/ZfkV9Gs8tlRzhCGcAnJQvIa5MULwbG7F8HntVmET7Dey3rMB5GRq7_fvyI6bGoLPNaAz2TZej4TuRDARaEPDyg.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .flex-center {
+        display: flex;
+        justify-content: center;
+      }
+
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .flex-col-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .form-text-field {
+        max-width: 240px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .form-radio-field {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .text-red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero-banner flex-center">
+        <h1 style="font-size: 40px">이스트캠프 스터디 모임</h1>
+      </section>
+
+      <section style="margin-top: 20px">
+        <form action="#">
+          <fieldset>
+            <legend>신청 양식</legend>
+            <ul class="flex-col">
+              <li class="form-text-field">
+                <label for="user-name"
+                  >이름<span class="text-red">*</span></label
+                >
+                <input
+                  id="user-name"
+                  type="text"
+                  placeholder="이름을 입력하세요."
+                  required
+                />
+              </li>
+              <li class="form-text-field">
+                <label for="user-email"
+                  >이메일<span class="text-red">*</span></label
+                >
+                <input
+                  id="user-email"
+                  type="email"
+                  placeholder="이메일을 입력하세요."
+                  required
+                />
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>HTML 배경지식</legend>
+
+            <ul>
+              <li class="form-radio-field">
+                <input
+                  id="html-true"
+                  name="html"
+                  type="radio"
+                  value="true"
+                  checked
+                />
+                <label for="html-true">처음 배웁니다</label>
+              </li>
+              <li class="form-radio-field">
+                <input id="html-false" name="html" type="radio" value="false" />
+                <label for="html-false">배운 경험이 있습니다</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="flex-col-center">
+            <div class="form-radio-field">
+              <input id="TOS" type="checkbox" required />
+              <label for="TOS">약관 동의<span class="text-red">*</span></label>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
