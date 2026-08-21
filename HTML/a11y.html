@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 기초 강의 신청</title>
+    <link rel="stylesheet" href="./a11y.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">본문 바로가기</a>
+
+    <header class="flex-row-between">
+      <h1>범쌤 온라인 클래스</h1>
+      <nav aria-label="주요 메뉴">
+        <ul class="GNB-container">
+          <li><a href="#introduction">강의 소개</a></li>
+          <li><a href="#curriculum">커리큠럼</a></li>
+          <li><a href="#preview">미리보기</a></li>
+          <li><a href="#registration">수강 신청</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="introduction">
+        <h2>강의 소개</h2>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style="width: 600px"
+          />
+          <figcaption>
+            강사의 설명을 들으며 최첨단 컴퓨터로 HTML을 공부하는 수강생들
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="curriculum">
+        <h2>커리큘럼</h2>
+
+        <ol>
+          <li>HTML 문서의 기본 구조</li>
+          <li>텍스트와 목록 태그</li>
+          <li>링크와 이미지</li>
+          <li>입력 양식</li>
+          <li>미디어와 웹 접근성</li>
+        </ol>
+      </section>
+
+      <section id="preview">
+        <h2>미리보기</h2>
+
+        <video
+          controls
+          muted
+          poster="https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          style="width: 600px"
+          aria-label="범쌤의 HTML 교실 소개영상"
+        >
+          <source
+            src="https://www.pexels.com/download/video/7999355/"
+            type="video/mp4"
+          />
+          현재 접속하신 브라우저에선 영상을 재생할 수 없습니다.
+          <a
+            href="https://www.pexels.com/video/man-and-the-elderly-man-talking-while-others-using-their-laptop-7999355/"
+            >원본 사이트</a
+          >를 방문 부탁드립니다.
+        </video>
+        <p>수강생들의 실습을 지켜보는 범쌤</p>
+      </section>
+
+      <section id="registration">
+        <h2>수강 신청</h2>
+
+        <form action="#" method="post" autocomplete="on">
+          <fieldset>
+            <legend>신청자 정보</legend>
+
+            <ul>
+              <li>
+                <label for="user-name">이름 (필수)</label>
+                <input
+                  type="text"
+                  id="user-name"
+                  autocomplete="name"
+                  placeholder="이름을 입력해주세요."
+                  required
+                />
+              </li>
+              <li>
+                <label for="user-email">email (필수)</label>
+                <input
+                  type="email"
+                  id="user-email"
+                  autocomplete="email"
+                  placeholder="이메일을 입력해주세요."
+                  required
+                />
+              </li>
+              <li>
+                <label for="user-tel">휴대전화 번호</label>
+                <input
+                  type="tel"
+                  id="user-tel"
+                  placeholder="휴대전화 번호를 입력해주세요."
+                />
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit">수강 신청</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <address>
+        <ul>
+          <li><strong>주식회사 심선법 프론트엔드 스쿨</strong></li>
+          <li>주소: 남양주 어딘가</li>
+          <li>연락처: 010-9999-9999</li>
+          <li>이메일: beomschool@contact.com</li>
+        </ul>
+      </address>
+    </footer>
+  </body>
+</html>
