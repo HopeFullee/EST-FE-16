@@ -1,0 +1,34 @@
+/* 태그 선택자 */
+h1 {
+  background-color: #ff4545;
+}
+
+/* 클래스 선택자 */
+.class-box {
+  background-color: #349eda;
+}
+
+/* 아이디 선택자 */
+#id-box {
+  background-color: #54c741;
+}
+
+/* 조합 선택자 */
+.color-box {
+  border: 1px solid #c53cc3;
+
+  > a {
+    color: #e7d93f;
+  }
+}
+
+/* 자손 클래스 선택자 */
+#color-list {
+  > li {
+    color: #1fb2cd;
+  }
+
+  > .point {
+    color: #ff871c;
+  }
+}

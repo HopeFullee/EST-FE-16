@@ -1,0 +1,28 @@
+/* 자식 선택자 */
+.menu > li {
+  color: #2563eb;
+}
+
+/* 인접 형제 선택자 */
+h2 + p {
+  font-weight: 700;
+}
+
+/* 일반 형제 선택자 */
+h2 ~ p {
+  color: #7c3aed;
+}
+
+/* 속성 존재 선택자 */
+input[type="email"] {
+  border: 2px solid #ef4444;
+}
+
+/* 속성값 선택자 */
+a[href^="https://"] {
+  color: #16a34a;
+}
+
+a[href$=".pdf"] {
+  font-weight: 700;
+}
