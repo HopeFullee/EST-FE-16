@@ -1,0 +1,29 @@
+/* 마우스 오버 */
+.course-link:hover {
+  color: #ef4444;
+}
+
+/* 키보드 포커스 */
+.apply-button:focus {
+  outline: 3px solid dodgerblue;
+  outline-offset: 3px;
+}
+
+/* 체크 상태 */
+input:checked {
+  accent-color: red;
+}
+
+/* 비활성 상태 */
+button:disabled {
+  opacity: 0.5;
+}
+
+/* 가상 요소 */
+.notice::before {
+  content: "📢";
+}
+
+.external::after {
+  content: "↗";
+}
