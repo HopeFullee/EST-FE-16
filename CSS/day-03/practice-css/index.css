@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background-color: lightpink;
+}
+
+body * {
+  margin: 0;
+}
+
+main {
+  max-width: 500px;
+  width: 100%;
+  color: #222222;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-title {
+  color: dodgerblue;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.profile-description {
+}
+
+.card-link-bg {
+  /* width: max-content; */
+  background: dodgerblue;
+  border-radius: 8px;
+}
+
+.profile-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 16px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
