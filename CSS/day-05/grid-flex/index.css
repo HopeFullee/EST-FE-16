@@ -1,0 +1,157 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #222222;
+  padding: 0 20px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid lightblue;
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: dodgerblue;
+    }
+
+    .navigation {
+      font-size: 20px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.main-content {
+  padding: 80px 0;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 674px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: dodgerblue;
+    }
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 500;
+    color: dodgerblue;
+  }
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+
+  .course-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    overflow: hidden;
+
+    .card-thumbnail {
+      position: relative;
+
+      img {
+        width: 100%;
+        max-height: 200px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+
+      .badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+        background-color: dodgerblue;
+        border-radius: 12px;
+        padding: 6px 10px;
+      }
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+
+      .card-header {
+        .category {
+          color: dodgerblue;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+
+        h2 {
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+      .description {
+        word-break: keep-all;
+        line-height: 1.5;
+      }
+
+      .card-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        strong {
+          font-weight: 700;
+        }
+
+        a {
+          display: block;
+          font-weight: 500;
+          background-color: dodgerblue;
+          color: white;
+          padding: 8px 12px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+#root {
+  color: white;
+  text-align: center;
+}
+
+.dashboard {
+  max-width: 1000px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.side-bar {
+  background-color: dodgerblue;
+}
+
+.main-content {
+  display: grid;
+}
+
+header {
+  background-color: salmon;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  background-color: hotpink;
+}
+
+.chart-container {
+  display: grid;
+  grid-template-columns: 0.725fr 0.375fr;
+  place-items: center;
+  background-color: green;
+}
+
+footer {
+  background-color: darkblue;
+}
