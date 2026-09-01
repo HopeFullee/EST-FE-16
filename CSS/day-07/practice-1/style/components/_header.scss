@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.course-section__header {
+  @include m.flex-col;
+
+  gap: v.$spacing-lg;
+
+  .course-section__eyebrow {
+    color: v.$color-primary;
+    font-size: v.$text-md;
+    font-weight: v.$font-semibold;
+  }
+
+  .course-section__title {
+    color: v.$color-text;
+    font-size: v.$text-screen;
+  }
+
+  .course-section__description {
+    color: v.$color-muted;
+  }
+}

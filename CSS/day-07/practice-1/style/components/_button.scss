@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v;
+
+.button {
+  display: inline-block;
+  color: white;
+  background: v.$color-primary;
+  padding: v.$spacing-md;
+  border-radius: v.$radius-md;
+  text-align: center;
+}

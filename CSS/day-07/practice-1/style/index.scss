@@ -1,0 +1,22 @@
+@use "./abstracts//variables" as v;
+@use "./abstracts/mixins" as m;
+
+@use "./components/header";
+@use "./components/course-card";
+@use "./components/button";
+
+.course-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  .course-section__inner {
+    @include m.flex-col;
+    gap: v.$spacing-xl;
+  }
+}
+
+.course-list {
+  @include m.flex-center;
+  gap: v.$spacing-lg;
+}

@@ -1,0 +1,56 @@
+@use "../abstracts//variables" as v;
+@use "../abstracts/mixins" as m;
+
+.course-card {
+  overflow: hidden;
+  border-radius: v.$radius-lg;
+  border: 1px solid v.$color-lightgray;
+  background: white;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &__thumbnail {
+    @include m.flex-center;
+    height: 160px;
+    font-size: v.$text-xl;
+    color: white;
+
+    &.course-card__thumbnail--html {
+      background: v.$color-html;
+    }
+
+    &.course-card__thumbnail--css {
+      background: v.$color-css;
+    }
+
+    &.course-card__thumbnail--sass {
+      background: v.$color-sass;
+    }
+  }
+
+  .course-card__content {
+    @include m.flex-col;
+
+    padding: v.$spacing-lg;
+    gap: v.$spacing-md;
+
+    .course-card__category {
+      color: v.$color-primary;
+      font-weight: v.$font-medium;
+    }
+
+    .course-card__title {
+      color: v.$color-text;
+      font-size: v.$text-lg;
+      font-weight: v.$font-medium;
+    }
+
+    .course-card__description {
+      color: v.$color-muted;
+      line-height: v.$spacing-lg;
+    }
+  }
+}
