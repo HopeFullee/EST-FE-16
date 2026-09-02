@@ -155,3 +155,19 @@
     }
   }
 }
+
+.within-box:focus-within {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 10px solid blue;
+}
+
+.has-box:has(input:focus) {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 10px solid green;
+}

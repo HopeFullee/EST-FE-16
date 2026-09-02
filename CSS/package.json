@@ -1,0 +1,21 @@
+{
+  "name": "est-fe-16",
+  "version": "1.0.0",
+  "description": "basics of css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass .:. --load-path=node_modules",
+    "watch-css": "sass --watch .:. --load-path=node_modules"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "bootstrap"
+  ],
+  "author": "hope",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.103.1"
+  }
+}
