@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap-Course-Final</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      .hero-visual {
+        min-height: 360px;
+        background:
+          radial-gradient(
+            circle at 20% 20%,
+            rgba(13, 110, 253, 0.3),
+            transparent 35%
+          ),
+          radial-gradient(
+            circle at 80% 80%,
+            rgba(111, 66, 193, 0.3),
+            transparent 35%
+          ),
+          #f8f9fa;
+      }
+
+      .course-thumb {
+        aspect-ratio: 16/10;
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <header class="navbar sticky-top py-2 bg-white border-bottom">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <h1 class="fw-bold"><a href="#">Bootstrap</a></h1>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="메뉴 열기"
+          >
+            <span aria-hidden="true" class="navbar-toggler-icon"></span>
+          </button>
+
+          <nav
+            class="navbar-collapse collapse position-absolute top-100 start-0 bg-white w-100 px-3 pb-2 border-bottom"
+            id="mainNav"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Course</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="container py-5">
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex flex-column align-items-start gap-3">
+              <span class="badge text-bg-primary">Frontend Class</span>
+              <h2 class="fw-bold">
+                웹 개발의 시작을<br />
+                함께 만들어보세요.
+              </h2>
+            </div>
+            <p class="text-secondary">
+              HTML과 CSS의 기본부터 Bootstrap을 활용한 반응형 웹사이트 제작까지
+              단계적으로 학습합니다.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary">강의 살펴보기</a>
+              <a href="#" class="btn btn-outline-dark">과정 소개</a>
+            </div>
+            <div
+              class="hero-visual rounded-4 p-4 overflow-hidden d-flex align-items-end"
+            >
+              <div class="bg-white rounded-4 p-4 shadow-sm w-100">
+                <small class="text-secondary">이번 주 학습</small>
+                <div
+                  class="d-flex justify-content-between align-items-end mt-3"
+                >
+                  <div>
+                    <h2 class="h4 fw-bold mb-1">Bootstrap UI</h2>
+                    <p class="text-secondary mb-0">
+                      Grid · Component · Responsive
+                    </p>
+                  </div>
+                  <span class="badge text-bg-dark">DAY 04</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>
