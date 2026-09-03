@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass .:. --load-path=node_modules",
-    "watch-css": "sass --watch .:. --load-path=node_modules"
+    "build-sass": "sass .:. --load-path=node_modules",
+    "watch-sass": "sass --watch .:. --load-path=node_modules",
+    "watch-tw": "tailwindcss -i ./day-09/tailwindcss-1/input.css -o ./day-09/tailwindcss-1/dist/output.css --watch"
   },
   "keywords": [
     "css",
@@ -16,6 +17,12 @@
   "author": "hope",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.103.1"
+    "@tailwindcss/cli": "^4.3.3",
+    "sass": "^1.103.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1"
   }
 }
