@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-sass": "sass .:. --load-path=node_modules",
     "watch-sass": "sass --watch .:. --load-path=node_modules",
-    "watch-tw": "tailwindcss -i ./day-09/tailwindcss-1/input.css -o ./day-09/tailwindcss-1/dist/output.css --watch"
+    "watch-tw": "tailwindcss -i ./day-10/input.css -o ./day-10/dist/output.css --watch"
   },
   "keywords": [
     "css",

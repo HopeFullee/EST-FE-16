@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@utility flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@utility flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@utility flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@utility flex-col-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
