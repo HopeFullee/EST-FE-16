@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹 API - DOM, Events</title>
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script type="module" src="./09.delegation.js"></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <h2>메인 메뉴</h2>
+      <ul>
+        <li class="home" data-name="home">
+          <a href="#">HOME</a>
+        </li>
+        <li class="about" data-name="about">
+          <a href="#">ABOUT</a>
+        </li>
+        <li class="contact" data-name="contact">
+          <a href="#">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="start">START</button>
+    <h1 class="first">TITLE</h1>
+    <div class="container"></div>
+    <div id="box"></div>
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+
+    <input id="field" type="text" value="hello" />
+
+    <section>
+      <article>
+        <p></p>
+      </article>
+    </section>
+  </body>
+</html>

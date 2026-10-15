@@ -1,0 +1,18 @@
+section {
+  background-color: dodgerblue;
+  padding: 2rem;
+}
+
+article {
+  background-color: orange;
+  padding: 2rem;
+}
+
+li {
+  width: fit-content;
+}
+
+p {
+  background-color: hotpink;
+  padding: 2rem;
+}
