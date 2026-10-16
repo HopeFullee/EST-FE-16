@@ -41,20 +41,3 @@ let toUpperCase;
 // 텍스트 이름 변환 유틸리티 함수
 let toCamelCase;
 let toPascalCase;
-
-// clousure
-const x = 'global';
-
-function outer() {
-  const x = 'outer';
-  return function inner() {
-    return x;
-  };
-}
-
-function caller(fn) {
-  const x = 'caller';
-  return fn();
-}
-
-const s = caller(outer()); // 'outer'. 호출 위치(caller)가 아니라 선언 위치(outer) 기준
